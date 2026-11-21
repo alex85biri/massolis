@@ -30,7 +30,7 @@
 
 | | Estado |
 | --- | --- |
-| **Web pública** · [massolis.com](https://massolis.com) | ✅ **Publicada y en uso** desde el 8 de noviembre de 2026 |
+| **Web pública** · [massolis.com](https://massolis.com) | ✅ **Publicada y en uso** desde el 8 de noviembre de 2026 (rediseño iniciado en junio de 2026) |
 | **App de operaciones** | 🛠️ **En pruebas**, con datos inventados. Lanzamiento en preparación |
 
 Este repositorio explica **cómo está montado** MASSolis. No contiene código de la app, claves ni datos de clientes o del personal: el código real está en un repositorio privado porque maneja datos personales.
@@ -40,7 +40,7 @@ Este repositorio explica **cómo está montado** MASSolis. No contiene código d
 | | Web | App |
 | --- | --- | --- |
 | Estado | Publicada en massolis.com | En pruebas; preparando el lanzamiento |
-| Inicio | 8 de noviembre de 2026 | 1 de noviembre de 2026 |
+| Inicio | Rediseño desde junio de 2026 a partir de una versión anterior · Publicada el 8 de noviembre de 2026 | 1 de noviembre de 2026 |
 | Cambios en el historial | 35 | Más de 150 |
 | Calidad | Auditoría de accesibilidad WCAG 2.2 AA | Pruebas automáticas: más de 100 casos en la app y más de 700 comprobaciones en la base de datos |
 | Base de datos | — | 34 migraciones, más de 30 tablas, todas con permisos por fila |
@@ -158,9 +158,11 @@ flowchart LR
 
 ## Copias de seguridad
 
+Montadas y programadas desde noviembre de 2026 para el entorno real, que estará vacío hasta el lanzamiento. Se activan del todo con él.
+
 - **Cada noche**, la base de datos y las fotos del entorno real se copian **cifradas** a un almacén privado en Europa.
-- **Cada mes se prueba la restauración** de forma automática: se descarga la última copia, se descifra, se restaura en una base de datos vacía y se compara tabla a tabla y foto a foto.
-- **Si una copia falla o no se hace**, llega un aviso por correo y la propia app lo detecta.
+- **La restauración se prueba de forma automática cada mes**: se descarga la última copia, se descifra, se restaura en una base de datos vacía y se compara tabla a tabla y foto a foto.
+- **Si una copia falla o no se hace**, llega un aviso por correo y la propia app lo detecta. Sin el aviso configurado, la copia se niega a ejecutarse, para que un fallo nunca pase desapercibido.
 
 ## Forma de trabajar
 
@@ -184,13 +186,13 @@ flowchart LR
 | v0.5 | 12/11/2026 | App del profesional: Android, cola sin conexión, fotos en R2, tiempo real y avisos al móvil |
 | v0.6 | 12/11/2026 | Portal del cliente: solicitudes, extras con presupuesto, mensajes y valoraciones |
 | v0.7 | 13/11/2026 | Recibos en PDF y Excel con envío por correo, y diseño para tablet |
-| v0.8 | 17/11/2026 | Entorno real separado, copias cifradas cada noche y restauración comprobada cada mes |
+| v0.8 | 17/11/2026 | Entorno real separado, y copias cifradas cada noche con restauración automática cada mes, programadas |
 
 ### Web
 
 | Versión | Fecha | Qué trajo |
 | --- | --- | --- |
-| v1.0 | 08/11/2026 | Primera versión, sistema de diseño, dominio propio y formulario de presupuesto |
+| v1.0 | 08/11/2026 | Primera versión publicada del rediseño: sistema de diseño, dominio propio y formulario de presupuesto |
 | v1.1 | 09/11/2026 | Enlaces limpios, «Sobre nosotros» e Instagram |
 | v1.2 | 13/11/2026 | Opiniones reales verificadas |
 | v1.3 | 17/11/2026 | Páginas por servicio para Google, menú de servicios y pie nuevo |
