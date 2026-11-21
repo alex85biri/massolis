@@ -26,13 +26,20 @@
 
 ---
 
+## Estado
+
+| | Estado |
+| --- | --- |
+| **Web pública** · [massolis.com](https://massolis.com) | ✅ **Publicada y en uso** desde el 8 de noviembre de 2026 |
+| **App de operaciones** | 🛠️ **En pruebas**, con datos inventados. Lanzamiento en preparación |
+
 Este repositorio explica **cómo está montado** MASSolis. No contiene código de la app, claves ni datos de clientes o del personal: el código real está en un repositorio privado porque maneja datos personales.
 
 ## En cifras
 
 | | Web | App |
 | --- | --- | --- |
-| Estado | En producción en massolis.com | Entorno de pruebas funcionando; preparando el lanzamiento |
+| Estado | Publicada en massolis.com | En pruebas; preparando el lanzamiento |
 | Inicio | 8 de noviembre de 2026 | 1 de noviembre de 2026 |
 | Cambios en el historial | 35 | Más de 150 |
 | Calidad | Auditoría de accesibilidad WCAG 2.2 AA | Pruebas automáticas: más de 100 casos en la app y más de 700 comprobaciones en la base de datos |
