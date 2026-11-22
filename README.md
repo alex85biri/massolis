@@ -102,7 +102,7 @@ Diseño y prototipos desde junio de 2026, de Marian López Solís y Gustavo Tapi
 
 - **Cola sin conexión.** Si el móvil pierde la cobertura, las acciones y las fotos se guardan en el móvil y se envían solas al volver.
 - **Tiempo real por canales privados.** Los cambios llegan al momento, y solo a quien tiene permiso.
-- **Responsive real.** Diseño propio para móvil, tablet y ordenador.
+- **Responsive real.** Adaptada a móvil, tablet y ordenador a partir del diseño del prototipo.
 
 ### Servidor y datos: Supabase
 
@@ -173,7 +173,7 @@ Probadas el 21/11/2026 en el entorno de pruebas: restauración de 75 tablas y 42
 - **Por fases**, cada una con criterios de «hecho» que se pueden comprobar: arranque, datos y permisos, acceso, operación, app del profesional, portal del cliente, recibos y lanzamiento.
 - **Revisión independiente al cerrar cada fase**, con informe de hallazgos y corrección antes de seguir.
 - **Registro de decisiones** con fecha y motivo para todo lo que cambia el alcance o la arquitectura.
-- **Prototipo aprobado como referencia.** La app parte de un prototipo validado con la empresa y lo va sustituyendo pantalla a pantalla por datos reales.
+- **Prototipo aprobado como referencia.** La app parte del prototipo de Marian López Solís (investigación, UX y UI), validado con la empresa, y lo va sustituyendo pantalla a pantalla por datos reales.
 - **Desarrollo asistido por IA.** El código se ha escrito con Claude Code, con la arquitectura, las decisiones y la revisión a mi cargo.
 
 ## Versiones
@@ -182,7 +182,7 @@ Probadas el 21/11/2026 en el entorno de pruebas: restauración de 75 tablas y 42
 
 | Versión | Fecha | Qué trajo |
 | --- | --- | --- |
-| prototipo-v1 | 01/11/2026 | Prototipo aprobado, punto de partida |
+| prototipo-v1 | 01/11/2026 | Prototipo de Marian López Solís aprobado, punto de partida |
 | v0.1 | 01/11/2026 | Proyecto real: conexión con Supabase, comprobaciones automáticas y entorno de pruebas publicado |
 | v0.2 | 01/11/2026 | Núcleo de la base de datos con permisos por fila y sus pruebas |
 | v0.3 | 08/11/2026 | Acceso real: invitaciones, doble verificación y recuperación de contraseña |
