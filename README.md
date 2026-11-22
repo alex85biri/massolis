@@ -30,7 +30,7 @@
 
 | | Estado |
 | --- | --- |
-| **Web pública** · [massolis.com](https://massolis.com) | ✅ **Publicada y en uso** desde el 8 de noviembre de 2026 (rediseño iniciado en junio de 2026) |
+| **Web pública** · [massolis.com](https://massolis.com) | ✅ **Publicada y en uso** desde el 8 de noviembre de 2026 (diseño iniciado en junio de 2026) |
 | **App de operaciones** | 🛠️ **En pruebas**, con datos inventados. Lanzamiento en preparación |
 
 Este repositorio explica **cómo está montado** MASSolis. No contiene código de la app, claves ni datos de clientes o del personal: el código real está en un repositorio privado porque maneja datos personales.
@@ -40,7 +40,7 @@ Este repositorio explica **cómo está montado** MASSolis. No contiene código d
 | | Web | App |
 | --- | --- | --- |
 | Estado | Publicada en massolis.com | En pruebas; preparando el lanzamiento |
-| Inicio | Rediseño desde junio de 2026 a partir de una versión anterior · Publicada el 8 de noviembre de 2026 | 1 de noviembre de 2026 |
+| Inicio | Diseño y prototipos desde junio de 2026 (Marian López Solís y Gustavo Tapia) · Primera versión de Marian · Publicada y ampliada desde el 8 de noviembre de 2026 | 1 de noviembre de 2026 |
 | Cambios en el historial | 35 | Más de 150 |
 | Calidad | Auditoría de accesibilidad WCAG 2.2 AA | Pruebas automáticas: más de 100 casos en la app y más de 700 comprobaciones en la base de datos |
 | Base de datos | — | 34 migraciones, más de 30 tablas, todas con permisos por fila |
@@ -77,6 +77,8 @@ Una sola base de código sirve las tres interfaces de la app. El tipo de cuenta 
 ## Las piezas
 
 ### Web pública: massolis.com
+
+Diseño y prototipos desde junio de 2026, de Marian López Solís y Gustavo Tapia. La primera versión, con el sistema de diseño y la auditoría de accesibilidad, es de Marian; la publicación con dominio propio y la ampliación (formulario de presupuesto, posicionamiento y opiniones verificadas), de Gustavo.
 
 - **HTML, CSS y JavaScript sin framework.** Carga rápida, sin dependencias y fácil de mantener.
 - **Sistema de diseño propio**: colores, tipografías (Plus Jakarta Sans e Instrument Serif) y componentes compartidos.
@@ -192,7 +194,7 @@ Montadas y programadas desde noviembre de 2026 para el entorno real, que estará
 
 | Versión | Fecha | Qué trajo |
 | --- | --- | --- |
-| v1.0 | 08/11/2026 | Primera versión publicada del rediseño: sistema de diseño, dominio propio y formulario de presupuesto |
+| v1.0 | 08/11/2026 | Primera versión, de Marian López Solís: sistema de diseño y auditoría de accesibilidad. El mismo día, publicación con dominio propio y formulario de presupuesto |
 | v1.1 | 09/11/2026 | Enlaces limpios, «Sobre nosotros» e Instagram |
 | v1.2 | 13/11/2026 | Opiniones reales verificadas |
 | v1.3 | 17/11/2026 | Páginas por servicio para Google, menú de servicios y pie nuevo |
