@@ -162,6 +162,8 @@ flowchart LR
 
 Montadas y programadas desde noviembre de 2026 para el entorno real, que estará vacío hasta el lanzamiento. Se activan del todo con él.
 
+Probadas el 21/11/2026 en el entorno de pruebas: restauración de 75 tablas y 428 filas sin diferencias y 8 de 8 fotos idénticas. La copia programada del entorno real funciona desde el 22/11/2026.
+
 - **Cada noche**, la base de datos y las fotos del entorno real se copian **cifradas** a un almacén privado en Europa.
 - **La restauración se prueba de forma automática cada mes**: se descarga la última copia, se descifra, se restaura en una base de datos vacía y se compara tabla a tabla y foto a foto.
 - **Si una copia falla o no se hace**, llega un aviso por correo y la propia app lo detecta. Sin el aviso configurado, la copia se niega a ejecutarse, para que un fallo nunca pase desapercibido.
